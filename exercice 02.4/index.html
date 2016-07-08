@@ -4,9 +4,22 @@
   <meta charset="utf-8">
   <title>Exercice 3</title>
 </head>
+<script type="text/javascript">
+	
+	function myFunction(event){
+		var x = event.keyCode;
+
+ 	   if (x == 13){  
+        alert(document.getElementById('nom').value);
+
+        }
+}
+		
+</script>
 <body>
+
   <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" onkeydown="myFunction(event)" />
   </form>
 </body>
 </html>
